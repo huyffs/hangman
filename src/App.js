@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letters = alphabet.split("");
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="header">
       </header>
+      <section>
+        <div className="title">Welcome to my Hangman!</div>
+        <div className="lives">1 guess remaining</div>
+        <div className="word">_____</div>
+        <div className="clue">This is a clue!</div>
+        <div className="keyboard">
+          <button>A</button>
+        </div>
+      </section>
+      <footer></footer>
     </div>
   );
 }
